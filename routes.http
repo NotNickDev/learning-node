@@ -1,0 +1,27 @@
+POST http://localhost:3333/videos
+Content-Type: application/json
+
+{
+    "title": "video Nolanote",
+    "description": "esse eh o primeiro video do canal nolanote",
+    "duration" : 180
+}
+
+###
+
+GET http://localhost:3333/videos
+
+###
+
+PUT http://localhost:3333/videos/0bf577e4-abbf-43c5-9329-a11b34632659
+Content-Type: application/json
+
+{
+    "title": "video alterado com database bbs",
+    "description": "esse n eh o primeiro video",
+    "duration" : 180
+}
+
+###
+
+DELETE http://localhost:3333/videos/8e72ed7d-2a10-4722-b492-0aec95154359
